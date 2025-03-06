@@ -26,7 +26,6 @@ public class AdminController {
 	public ResponseEntity<Admin> registerAdmin(@Valid @RequestBody Admin admin) throws AdminException
 	{
 		 Admin adm = asi.addAdmin(admin);
-		int xy = 100;
 		 
 		 return new ResponseEntity<Admin>(adm,HttpStatus.OK);
 		
